@@ -46,7 +46,7 @@
     /* GAPS */
             --gap-sm:14px;
             --gap-md:30px;
-            --gap-lg:50px;
+            --gap-lg:54px;
             --gap-xl:60px;
     /* padding */
             --pad-login:200px;
@@ -66,19 +66,38 @@ ul{list-style:none;padding: 0;}
 li{padding:0 ;}
 a{text-decoration:none!important;}
 
-
-
+/* border */
+.borderr{
+    border: 1px solid black;
+}
 
 /* Leatest Products */
+.product{
+    padding-top: 51px;
+   
 
+}
+.productLat{
+    padding-top: 81px;
+}
+.productLat h1{
+    margin-bottom: 19px;
+    font-size: var(--size_2) ;
+    font-family: var(--family_3);
+    color: #151875;
+    font-weight: bold;
+}
 .li_products{
     gap: var(--gap-lg);
+    margin-bottom: 50px;
+    padding-inline: 0px !important;
 }
 .li_products a{
     color:var(--text_3) ;
     font-family: var(--family_3);
     font-size: var(--size_8);
     padding-bottom: 3px;
+    
 
 }
 .li_products .active{
@@ -87,58 +106,220 @@ a{text-decoration:none!important;}
     
     
 }
-.product .card{
+.product .card,.productLat .card2{
     background-color:var(--back_card) ;
     border-radius: 43px;
     border: none;
-    height: 220px;
+    height: 319px;
+    box-shadow: 9px 22px 64px 0px rgba(196, 196, 196, 0.34) ;
+
     
 
 }
-.product .card2{
-    background-color:var(--back_card) ;
-    border-radius: 43px;
+.barsFP{
+    gap: 16px;
+}
+
+.barFP{
+    width: 43px;
+    height: 10px;
+    border-radius: 27px;
+    background-color: #FEBAD7;
     border: none;
-    height: 240px;
-    }
-.product .card2 h4{
+}
+.barFPactive{
+    width: 65px;
+    background-color: #FB2E86;
+}
+.productLat .card2 h4,.productLat .card2 h5{
     font-size:var(--size_8) ;
     font-family: var(--family_5);
     color: #000;
+    margin: 0 !important;
 }
-.product .card2 h5{
-    font-size: var(--size_8);
-    font-family: var(--family_5);
+.productLat .card2 h5{
+   
     color: #151875;
     font-weight: bold;
-    padding-bottom: 10px;
+   
+   
 }
 
-.product .bigCard{
-    padding: 15px 150px;
+.product .bigCard {
+    margin-bottom: 48px;
+    row-gap: 67px;
+    column-gap: 31px;
+    
   
 }
-.product .img_card{
+.productLat .bigCard{
+    margin-bottom: 80px;
+    row-gap: 40px;
+    column-gap: 31px;
+
+    
+  
+}
+.product .img_card {
     width: 100%;
-    height: 75%;
-    transform:  scale(0.7,1.2) translateY(-15px);
-    padding: 15px;
+    height: 80%;
     
 }
-.product h4{
-    font-size: var(--size_7) ;
+.productLat .img_card{
+    width: 90%;
+    height: 80%;
+    margin-bottom: 4px;
+    
+}
+.product h4 ,.productLat h4{
+    font-size: var(--size_3) ;
     font-family: var(--family_3);
     color: #000;
 }
 .product h1,.blog h1,.gamers_title{
     font-size: var(--size_2) ;
     font-family: var(--family_4);
-    color: var(--text_2);
+    color: #151875;
     font-weight: bold;
-    padding: 50px 0px;
+    margin-bottom: 81px;
+}
+.productTrend h1{
+    margin-bottom: 51px;
+}
+.productTrend{
+    padding-top: 51px;
 }
 
 /* labs */
+
+ 
+
+.productList label ,
+.discount label,
+.price label,
+.stroage label,
+.features label,
+.rating label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 25px;
+    margin-right: 15px;
+    font-size: 11px;
+}
+.productList label:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 1px;
+    background-color: #E5E0FC;
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8); }
+  
+    .discount label:before {
+        content: "";
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        margin-right: 10px;
+        position: absolute;
+        left: 0;
+        bottom: 1px;
+        background-color: #FFDBF1;
+        box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8); }
+      
+        .price label:before {
+            content: "";
+            display: inline-block;
+            width: 16px;
+            height: 16px;
+            margin-right: 10px;
+            position: absolute;
+            left: 0;
+            bottom: 1px;
+            background-color: #FFDBF1;
+            box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8); }
+            .stroage label:before {
+                content: "";
+                display: inline-block;
+                width: 16px;
+                height: 16px;
+                margin-right: 10px;
+                position: absolute;
+                left: 0;
+                bottom: 1px;
+                background-color: #FFDBF1;
+                box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8); }
+              
+                .features label:before {
+                    content: "";
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    margin-right: 10px;
+                    position: absolute;
+                    left: 0;
+                    bottom: 1px;
+                    background-color: #E5E0FC;
+                    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8); }
+                    .rating label:before {
+                        content: "";
+                        display: inline-block;
+                        width: 16px;
+                        height: 16px;
+                        margin-right: 10px;
+                        position: absolute;
+                        left: 0;
+                        bottom: 1px;
+                        background-color: #FFF6DA;
+                        box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8); }
+                      
+            
+  input[type=checkbox] {
+    display: none;
+  }
+  
+
+
+
+.labCard{
+    padding-top: 46px;
+}
+.titleLab{
+    font-size:var(--size_6) ;
+    font-weight: bold;
+    color:#151875 ;
+    font-family: var(--family_3);
+    margin-bottom: 8px;
+}
+.aboutLab{
+    font-size:var(--size_11) ;
+    font-weight: bold;
+    color:#8A8FB9 ;
+    font-family: var(--family_2);
+    margin-bottom: 46px;
+}
+.list ul{
+    padding: 0 !important;
+    margin: 0 !important;
+
+}
+.list .rating ul li{
+    padding: 0 !important;
+    margin: 0 !important;
+    
+    
+    
+}
+.list .rating .stars{
+    gap: 2px;
+}
+.list .Msi , .list .Cashback{
+    margin-bottom: 51px;
+}
 #page2 .list h2 {
     font-size:var(--size_7) ;
     font-weight: bold;
@@ -146,21 +327,47 @@ a{text-decoration:none!important;}
     font-family: var(--family_3);
     border-bottom: 1px solid black;
     display: inline-block;
-    margin-bottom: 10px;
+    width: fit-content;
+    margin-bottom: 25px;
    
 }
-#page2 .list .product label,#page2 .list .discount label,#page2 .list .stroage label ,#page2 .list .features label{
+.list .stroageH,.list .fh {
+    font-size:var(--size_7) ;
+    font-weight: bold;
+    color:var(--text_3) ;
+    font-family: var(--family_3);
+    border-bottom: 1px solid black;
+    display: inline-block;
+    width: fit-content;
+}
+.list .stroageH{
+    margin-bottom: 35px !important;
+
+}
+.list .fh{
+    margin-bottom: 30px !important;
+
+}
+#page2 .list .productList label,#page2 .list .discount label,#page2 .list .stroage label ,#page2 .list .features label{
     font-size:var(--size_9) ;
     color:var(--text_7) ;
     font-family: var(--family_2);
 }
 ul li{
-    gap:var(--gap-sm) ;
-    padding: 5px 0;  
+    gap:7px ;
+    margin-bottom: 20px;
 }
-#page2 .list .product ,#page2 .list .discount{
-    padding:10px 0 30px
+.liRating ,.liPrice,.liSto{
+    
+    margin-bottom: 16px;
 }
+.liRatingLast{
+    margin-bottom: 37px ;
+}
+.liPriceLast , .liStoLast{
+    margin-bottom: 23px;
+}
+
 #page2 .list .rating label{
     font-size:var(--size_11) ;
     color:var(--text_1) ;
@@ -183,9 +390,12 @@ ul li{
     padding: 5px 10px ;
     border: 1px solid #BCBDDB;
 }
+.list .inputPrice{
+    margin-bottom: 27px;
+}
 #page2 .list .color{
     gap: 10px;
-    padding: 0;
+   
 }
 #page2 .list .color1 div{
     width: 14px;
@@ -206,21 +416,34 @@ ul li{
     background-color: #E248FF;
 }
 #page2 .list{
-    padding: 35px 25px;
-    box-shadow: 10px 10px 74px 0px #0000002a ;
-    gap: 40px;
+    border: none;
+    padding-top: 32px ;
+    padding-left: 26px;
+    height: 100%;
+    box-shadow: 10px 10px 74px 0px rgba(0, 0, 0, 0.07);
+    
 }
 #page2 .miniCard{
     justify-content: space-between;
     align-items: center;
-    box-shadow: 10px 10px 74px 0px #0000002a ;
+    box-shadow: 9px 22px 64px 0px rgba(196, 196, 196, 0.34) ;
     border-radius: 25px;
-    padding: 50px;
+    padding-block: 30px;
 }
-#page2 .miniCard img{max-width: 290px;}
+.cardLabShop{
+    margin-bottom: 60px;
+}
+.cardLabShopLast{
+    margin-bottom: 0px;
+}
+#page2 .miniCard img{max-width: 330px;
+height: 271px;}
 #page2 .miniCard .left_icons li{
    margin:0 0  var(--gap-md) 0;
    
+}
+#page2 .miniCard .left_icons{
+    padding: 0;
 }
 #page2 .miniCard .right_card{
     max-width: 400px;
@@ -228,11 +451,13 @@ ul li{
     flex-direction: column;
     
 }
+
 #page2 .miniCard .right_card .title{
     font-size:var(--size_5) ;
     color:var(--text_1) ;
     font-family: var(--family_6);
     line-height: 25px;
+    margin-bottom: 5px;
 
 
 }
@@ -256,13 +481,20 @@ ul li{
     font-weight: normal;
     color: #000;
     font-family:var(--family_6) ;
+    margin: 0;
+    font-weight: 300;
 }
 #page2 .right_card .price{
     font-size: var(--size_13);
-    padding: 5px 20px 0 0;
     font-weight: normal;
     color: #FD0054;
     font-family:var(--family_6) ;
+}
+.right_card .priceStars{
+    gap: 13px;
+}
+.right_card .stars{
+    gap: 6px;
 }
 /* contact */
 .order .true{
@@ -299,6 +531,11 @@ ul li{
 }
 
 /* feature */
+.topFeature{
+    padding-top: 172px;
+    
+    
+}
 .features h3 {
     font-size:var(--size_3) ;
     color:var(--text_3);
@@ -306,6 +543,9 @@ ul li{
     font-family: var(--family_3) ;
     line-height: 48px;
     max-width: 522px;
+    margin: 0px ;
+    margin-bottom: 14px;
+
 }
 .features p{
     font-size:var(--size_9) ;
@@ -314,6 +554,8 @@ ul li{
     font-family: var(--family_2) ;
     line-height: 25.6px;
     max-width: 550px;
+    margin: 0px ;
+    margin-bottom: 100px;
 }
 .features button{
     border: none;
@@ -324,22 +566,23 @@ ul li{
     font-size:var(--size_9) ;
     font-family: var(--family_2) ;
     padding: 9px 30px;
-    margin-top: 70px;
+   
 }
 .features .features_title{
     font-size:var(--size_2) ;
-    color:var(--text_1);
+    color:#151875;
     font-weight: bold;
     font-family: var(--family_3) ;
-    line-height: 25.6px;
-    padding: 143px 0 50px;
+    margin-bottom: 55px;
+    
+    
 }
 .features h4{
     font-size:var(--size_6) ;
     color:var(--text_3);
     font-weight: bold;
     font-family: var(--family_3) ;
-    padding: 20px 0;
+   margin-bottom: 20px;
 }
 
 .features h5{
@@ -352,29 +595,46 @@ ul li{
     margin: auto;
 }
 .features .cardbox{
-    padding: var(--pad-card-gamer-top) 28px 45px 28px;
+    padding: 56px 26px 45px 26px;
     background-color: #fff;
+    box-shadow: 0 0 20px 0 #e5e5e5;
+    
+}
+.features .cardbox img{
+   margin-bottom: 27px;
     
 }
 .features .cardbox_2{
     border: none;
     border-bottom: 1px solid #FF9100;
 }
-.features .bigCard{
-    background-color:#8a8fb90e ;
-    padding: 10px;
+.bottonFeature{
+    padding:124px 0 122px 0;
 }
+.bottonFeature .features_title{
+    margin-bottom: 67px;
+}
+
+
+
 /* cart */
 .top_cart{
     border: none;
     border-bottom: 1px solid #E5E5E5;
+    margin-bottom: 38px;
+}
+.carts .tabelCard{
+    padding-inline: 93px;
 }
 .carts h3{
     font-size:var(--size_7) ;
     color:#1D3178;
     font-weight: bold;
     font-family: var(--family_2) ;
-    padding: 18px 0 18px 39px;
+    
+}
+.carts .headerTable{
+    margin-bottom: 43px;
 }
 .carts h4{
     font-size:var(--size_8) ;
@@ -388,7 +648,6 @@ ul li{
     color:#1D3178;
     font-weight: bold;
     font-family: var(--family_2) ;
-    /* padding: 18px 0 18px 39px; */
 }
 .carts .list img{
     width: 80px;
@@ -433,23 +692,30 @@ ul li{
     color:#1D3178;
     font-weight: bold;
     font-family: var(--family_2) ;
-    padding: 32px 13px 13px;
+   
+}
+.tatails .tatailsh3{
+    margin-bottom: 19px !important;
 }
 .tatails_row{
     border-bottom: 1px solid #E8E6F1;
+    margin-bottom: 34px;
+}
+.tatails_row2{
+    border-bottom: 1px solid #E8E6F1;
+    margin-bottom: 27px;
 }
 .tatails_row_svg{
-    padding: 35px 13px;
-
+margin-bottom: 35px;
+gap: 7px;
 }
 .tatails p{
     font-size:var(--size_11) ;
     font-family:var(--family_2) ;
     color: #8A91AB;
-    padding-left: 5px;
+    margin: 0 !important;
 }
 .tatails .b2{
-    margin: 13px;
     padding: 11px 90px;
     background-color:var(--button_2);
     font-size:var(--size_10) ;
@@ -460,17 +726,36 @@ ul li{
 .tatails_mini{
     background-color: #FFEBF1;
     border-radius: 3px;
-    padding: 15px 10px;
+    padding: 34px 22px  32px;
 }
 /* nav */
+.navbar{
+    padding: 0 !important;
+    height: 80px;
+    padding-inline: 38px 50px !important;
+}
+.navbar .navSearch{
+    gap: 63px;
+}
+.navbar .inputSearch{
+    width: 245px !important;
+    
+}
+
+.navbar .inputSearch::placeholder{
+   color: #000;
+}
+.navbar ul li {
+    margin: 0 !important;
+}
 .nav-link{
     color: #fff !important;
     font-size: 16px !important;
     line-height: 20px !important;
     font-family: var(--family_2);
 }
-.navbar-nav{
-    gap: 15px;
+.looggoo{
+   margin-block: 18px !important;
 }
 .navbar .social{
     gap: 12px;
@@ -479,33 +764,42 @@ ul li{
 .form-control{
     border-radius: 50px !important;
 }
-.form-control::placeholder{
-    color: #000;
-}
 .nav{
     background-color: var(--back_home);
-    padding: 100px 0 20px 0;
+    padding-top: 80px;
+    
+}
+.navbox{
+    padding: 92px 0 37px;
 }
 .nav h1{
     font-size:var(--size_1) ;
     font-family:var(--family_4) ;
     color: #000;
     font-weight: bold;
+    margin-bottom: 0;
+}
+.nav .dual{
+    margin-bottom: 13px;
 }
 .nav p{
-    font-size:var(--size_7) ;
+    font-size:var(--size_5) ;
     font-family:var(--family_4) ;
     color: #727272;
     font-weight: 500;
     max-width: 497px;
-    padding-top:5px ;
+    margin-bottom: 22px;
+    text-transform: capitalize;
+}
+.nav #compat{
+    font-size:var(--size_7) ;
 }
 .nav h2{
     font-size:var(--size_3) ;
     font-family:var(--family_4) ;
     color: #000;
     font-weight: 600;
-    padding: 22px 0;
+    margin-bottom: 59px;
 }
 .nav button{
     color: #fff;
@@ -514,43 +808,72 @@ ul li{
     border-radius: 20px;
     border: none;
     font-weight: bold;
-    margin: 30px 0 30px;
     font-size: var(--size_5);
     font-family: var(--family_4);
+    margin-bottom: 36px;
 }
 .nav_left{
     width: 18px;
     height: 211px;
+    padding: 0 !important;
     background:linear-gradient(#EC368D,#D72828) ;
 }
 .nav_right .off{
-    top: 10px;
-    right: 75px;
+    top: 53px;
+    right: 69px;
 }
 
 .nav_right .playstation{
-    top: 0;
-    right: 25px;
+    top: -5px;
+    right: 41px;
+}
+.backplaystation{
+    top: -5px;
+    right: 0px;
 }
 
+.nav .cubicGroup{
+    gap: 15.5px;
+    
+}
+.nav .cubic{
+    width: 13px;
+    height: 12px;
+    background-color: #FB2E86;
+    transform: rotate(45deg);
+}
+.nav .cubicEmpty{
+    background-color: transparent;
+    border: 1.3px solid #FB2E86;
+}
 /* contact */
+.contact{
+    padding-top: 96px;
+}
 .contact .information h2, .contact .contactWay h2{
     font-size: var(--size_3);
     color: var(--text_3);
     font-family: var(--family_3);
     font-weight: bold;
-    padding:13px 0 ;
+    margin-bottom: 13px;
 }
-.contact .information p ,.contact .contactWay p{
+.contact .contactWay h2{
+    margin-bottom: 29px;
+}
+.contact .information p ,.contact .contactWay p , .touch p{
     font-size: var(--size_10);
     color: #8A8FB9;
     font-family: var(--family_2);
     font-weight: 500;
     line-height: 25.6px;
+    margin-bottom: 60px;
+}
+.contact .contactWay p{
+    margin-bottom: 0px;
 }
 .contact .information .circle {
     gap: 14px;
-    padding-top: 50px;
+    
 }
 .contact .information .circle div{
     width: 25px;
@@ -595,14 +918,23 @@ ul li{
 }
 .contact .contactWay .color{
     gap: 15px;
-    padding: 10px 0;
+    margin-bottom: 57px;
+   
 }
-.contact .touch{
-    padding: 100px 0;
+.contact .contactWay .colorLast{
+    gap: 15px;
+    margin-bottom: 149px;
+   
+}
+.touch h2{
+    margin-bottom: 20px !important;
+}
+.touch p{
+    margin-bottom: 49px !important;
 }
 .contact .form{
-    gap: 20px;
-    padding: 40px 0;
+    column-gap: 20px;
+   
 }
 .contact .form .f{
     width: calc(50% - 10px);
@@ -612,6 +944,7 @@ ul li{
     outline: none;
     border: 1px solid #a4b6c8d2;
     padding: 9px;
+    margin-bottom: 34px;
 }
 
 
@@ -627,12 +960,18 @@ ul li{
     background-color: var(--button_1);
     padding: 9px 41px;
     border: none;
+    margin-bottom: 209px !important;
 }
 
 /* footer */
 .footer{
     background-color: #000;
-    padding: 50px 0;
+}
+.footerCard{
+    padding-block: 102px 91px;
+}
+.imgFooter{
+    margin-bottom: 14px;
 }
 .footer .gamer,.navbar .gamer{
     color: var(--text_4);
@@ -646,8 +985,8 @@ ul li{
     color: var(--text_10);
     font-style: var(--family_4);
     font-size: var(--size_9);
-    padding: 10px 0 ;
     font-weight: bold;
+    margin-bottom: 14px;
 }
 .footer input{
     outline: none ;
@@ -674,20 +1013,32 @@ ul li{
 }
 .footer .social{
     gap: 14px;
+    margin-bottom: 31px;
+    padding: 0 !important;
+    margin-left: 18px;
+
 }
 .footer h3{
     color: #fff;
     font-size: 16px;
     font-family: var(--family_4);
     font-weight: bold;
+    margin-bottom: 7px;
 }
-
+.footerone{
+    margin-bottom: 35px;
+}
+.visaGoogle{
+    gap: 246px;
+    margin-bottom: 31px;
+}
 .footer h6{
-    color: #787878;
+    color: #FFFFFF;
     font-size: 14px;
     font-family: var(--family_4);
     line-height: 25px;
-    padding: 3px 0;
+    margin: 0px;
+    font-weight: 200;
 }
 .footer .googlePlay{
     gap: var(--gap-md);
@@ -701,31 +1052,43 @@ ul li{
 }
 .visa{
     max-width: 300px;
+    margin-left: 28px;
+   
 }
 /* login */
 .login .box{
-    padding: 30px;
+    padding: 50px 55px;
     max-width:550px;
     margin: auto;
+    box-shadow: 0 0 25px 10px rgba(248, 248, 251, 1) !important ;
     
 }
 .login{
-    padding: var(--pad-login) 0;
+    padding-block: 165px;
 }
 .login h2{
     color: #000;
     font-size:var(--size_4) ;
     font-family: var(--family_3);
     font-weight: bold;
+    margin-bottom: 7px;
 }
 .login .p{
     color: #9096B2;
     font-size:var(--size_8) ;
     font-family: var(--family_2);
+    margin-bottom: 37px;
 }
 .login .input ,.login .forget{
     max-width: 432px;
     margin: auto;
+    margin-bottom: 23px;
+}
+.login .email{
+    margin-bottom: 23px;
+}
+.login .password{
+    margin-bottom: 13px;
 }
 .login input::placeholder{
     color: #9096B2;
@@ -740,6 +1103,7 @@ ul li{
 .login .btnLogin{
     max-width: 432px;
     margin: auto;
+    margin-bottom: 28px;
 }
 .login .loginBtn{
     background-color: var(--button_1);
@@ -748,6 +1112,9 @@ ul li{
     font-weight: bold;
     font-size:var(--size_8) ;
 
+}
+.donot{
+    margin-bottom: 0 !important;
 }
 .login .create{
     color: var(--text_4);
@@ -758,9 +1125,14 @@ ul li{
 }
 
 /* client */
-.client{
+.clientback{
     background-color: var(--back_form);
-    padding: 50px 0;
+    margin-bottom:77px;
+}
+.client{
+    padding-top: 82px;
+    padding-bottom: 66px;
+    
 }
 .client h1{
     color: var(--text_1);
@@ -768,7 +1140,11 @@ ul li{
     font-family: var(--family_3);
     line-height: 25.8px;
     font-weight: bold;
-    padding: 50px 0;
+    margin-bottom: 64px;
+   
+}
+.client img{
+    margin-bottom: 25px;
 }
 .client h2{
     color: var(--text_1);
@@ -776,13 +1152,16 @@ ul li{
     font-family: var(--family_2);
     line-height: 25.8px;
     font-weight: 700;
-    padding: 25px 0 0 0;
+    margin-bottom: 0;
+   
 }
 .client h3{
     color: #8A8FB9;
     font-size:var(--size_12) ;
     font-family: var(--family_2);
-    padding: 5px;
+    line-height: 25.8px;
+    margin-bottom: 14px;
+   
 }
 .client .paragraph{
     max-width: 689px;
@@ -790,10 +1169,46 @@ ul li{
     color: #8A8FB9;
     font-size:16px ;
     font-family: var(--family_2);
-    padding: 5px 0px 50px 0;
     font-weight: bold;
+    line-height: 25.8px;
+    margin-bottom: 14px;
+
+}
+.client .bars{
+    gap: 5px;
+}
+.client .bar{
+    width: 18px;
+    height: 3px;
+    border: none;
+    background-color: #FF75B0;
+    border-radius: 3px;
+}
+.client .bars .active{
+    width: 27px;
+    background-color: #FB2E86;
 }
 /* blog */
+.blog{
+    padding:51px 0 89px;
+}
+.blog h1{
+    margin-bottom: 80px;
+}
+.blog  .cardLeatest{
+    box-shadow: 0px 4px 64px 0px rgba(0, 0, 0, 0.048);
+    padding-bottom: 35px;
+}
+.blog  .cardLeatestBox{
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.blog .cardLeatest img{
+   margin-bottom: 19px;
+}
+.blog .date{
+    margin-bottom: 31px;
+    padding: 0 14px;
+}
 .blog span{
     font-size: var(--size_10);
     color:var(--text_3) ;
@@ -801,47 +1216,62 @@ ul li{
     padding-right: 15px;
 
 }
+.blog .detailsBlog{
+    padding-inline: 19px;
+}
 .blog h2{
     font-size: var(--size_8);
     font-weight: bold;
     color:var(--text_3) ;
     font-family: var(--family_3);
-    padding: 15px 0;
-}
-.blog .active{
-    color:#FB2E86 ;
-  
+   margin-bottom: 17px;
 }
 .blog p{
     font-size: var(--size_9);
     color:#72718F ;
     font-family: var(--family_2);
     line-height: 30px;
+    padding-right: 78px;
 }
 .blog a{
     font-size: var(--size_9);
     color:var(--text_3) ;
     font-family: var(--family_2);
     display: inline-block;
-    padding-top: 15px;
-    margin-bottom: 20px;
     border-bottom: 1px solid #151875;
 }
+
+.blog .active{
+    color:#FB2E86 ;
+   
+  
+}
+
+.blog a.active{
+    color:#FB2E86 ;
+    border-bottom: 1px solid #FB2E86;
+   
+  
+}
 /* details */
+.details{
+    padding-top: 68px;
+    padding-bottom: 90px;
+}
 .details .cardde{
-    padding: 25px;
+    padding: 43px 5px 25px 43px  ;
 }
 .details .bigCard{
     box-shadow: 0 0 25px 5px #00000010;
     border-radius: 2px;
-    margin-bottom: 90px;
+   
 }
 .details h2{
     font-size: var(--size_3);
     color:#101750 ;
     font-family: var(--family_3);
     font-weight: bold;
-    padding: 32px 0;
+   margin-bottom: 32px;
 }
 .details .detailsPara{
     font-size: var(--size_5);
@@ -862,23 +1292,18 @@ ul li{
     font-size: var(--size_7);
     color:#000 ;
     font-family: var(--family_6);
-    margin: 0;
+    margin: 2px;
 
 }
 .details .lenovoGroup{
-    padding: 20px;
     gap: 20px;
-}
-.details .lenovo{
-    font-size: var(--size_8);
-    color:rgb(153, 4, 4) ;
-    font-family: var(--family_5);
+    margin-bottom: 34px;
 }
 .details .year{
     font-size: var(--size_8);
     color:#000000b4 ;
     font-family: var(--family_5);
-    font-weight: lighter;
+    font-weight: 400;
 }
 .details button{
     
@@ -896,7 +1321,6 @@ ul li{
 }
 .details .btn{
     padding: 0;
-    margin-top: 10px;
     
 }
 .details .rightCard{
@@ -906,6 +1330,7 @@ ul li{
 /* description */
 .des .links_des{
     gap: 85px;
+    margin-bottom: 61px;
 
 }
 .des .a{
@@ -919,7 +1344,7 @@ ul li{
     color:#151875  ;
     font-family: var(--family_3);
     font-weight: bold;
-    padding: 36px 0 15px 0;
+   
 }
 .des p{
     font-size: var(--size_9);
@@ -927,30 +1352,49 @@ ul li{
     font-family: var(--family_3);
     font-weight: bold;
 }
+.des .paraDes{
+    margin-bottom: 36px;
+}
+.des .hdes{
+    margin-bottom: 16px;
+}
 .des{
     background-color: #FFEBF1;
-    padding: 120px 0;
+    padding: 116px 0 113px;
+}
+.des .moreDetails{
+    margin-bottom: 14px;
+    gap: 8px;
+}
+.des .moreDetailsLast{
+    gap: 8px;
+}
+
+.des .svg2{
+    color: #2F1AC4;
 }
 
 /* related */
 .related{
-    padding: 90px 0 ;
+    padding: 89px 0 ;
 }
 .related .related_img{
-    height: 230px;
+    height: 270px;
+    margin-bottom: 40px;
 }
 .related h2{
     font-size: var(--size_3);
     color:#101750 ;
     font-family: var(--family_3);
     font-weight: bold;
-    padding-bottom: 96px;
+    margin-bottom: 60px;
 }
 .related h3{
     font-size: var(--size_9);
     color:#151875 ;
     font-family: var(--family_3);
     font-weight: bold;
+    margin-bottom: 15px;
 }
 .related .stars{
     gap: 3px;
@@ -962,36 +1406,52 @@ ul li{
     font-family: var(--family_6);
 }
 .related .desImage{
-    padding: 40px 0 15px 0;
+    
 }
 
 
 /* shipping */
 .shipping{
-    margin-bottom: 116px;
+    padding-top: 76px;
+}
+.titleShip{
+    font-size: var(--size_5);
+    color:#1D3178 ;
+    font-family: var(--family_3);
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.titleCard{
+    font-size: var(--size_11);
+    color:#1D3178 ;
+    font-family: var(--family_2);
+    margin-bottom: 25px;
 }
 .shipping .shipping_left {
     background-color: #FFEBF1;
+    padding: 64px 30px;
 }
 .shipping .shipping_left h2{
     font-size: var(--size_8);
     color:#1D3178 ;
     font-family: var(--family_3);
     font-weight: bold;
+    margin: 0;
     
 
 }
 .shipping_left .contact{
-    padding-bottom: 40px;
+    margin-bottom: 42px;
 }
 .shipping_left .email{
-
-    padding-bottom: 35px;
+margin-bottom: 45px !important;
 }
 .shipping .shipping_left h3{
     font-size: var(--size_10);
     color:#9CB1FF ;
     font-family: var(--family_2);
+    margin: 0;
     
 }
 .shipping_left span{
@@ -1003,18 +1463,30 @@ ul li{
     font-size: var(--size_11);
     color:#8A91AB ;
     font-family: var(--family_2);
-    padding-bottom: 80px;
+
+}
+.shipping_left .tatails_row_svg p{
+    margin: 0 !important;
+}
+.shipping_left .tatails_row_svg {
+   margin-bottom: 109px;
 }
 .shipping_left input{
     width: 45%;
     background-color: transparent;
-    padding: 16px 0;
     border: none;
-    margin-block: 10px;
+    padding-bottom: 16px;
+    margin-bottom: 40px;
      
 }
+.shipping_left .lastInput{
+    margin-bottom: 117px !important;
+}
+.shipping_left .adress{
+    margin-bottom: 43px !important;
+}
 .shipping_left .active{
-    border-bottom: 1px solid #BFC6E0;
+    border-bottom: 2px solid #BFC6E0;
 }
 .shipping_left input::placeholder{
     font-size: var(--size_10);
@@ -1030,12 +1502,7 @@ ul li{
     border-radius: 2px;
     border: none;
     background-color:#FB2E86 ;
-    margin-top: 130px;
     outline: none;
-}
-.shipping_left{
-    padding: 65px 0px;
-
 }
 .shipping_left input:focus{
     border: none;
@@ -1045,6 +1512,8 @@ ul li{
     font-size: var(--size_10);
     color:#000 ;
     font-family: var(--family_2);
+    margin-bottom: 6px;
+   
 }
 .shipping_right .colorBlack{
     font-size: var(--size_11);
@@ -1067,7 +1536,16 @@ ul li{
 }
 .shipping_right .item{
     border-bottom: 1px solid #E1E1E4;
-    padding: 20px 0 5px ; 
+    padding-bottom: 16px;
+    margin-bottom: 15px;
+    
+}
+
+.shipping_right .itemLast{
+    border-bottom: 1px solid #E1E1E4;
+    padding-bottom: 16px;
+    margin-bottom: 42px;
+    
 }
 .shipping_right .boxBottom{
     margin-top: 42px;
@@ -1075,7 +1553,8 @@ ul li{
 
 /* order */
 .order{
-    margin-bottom: 210px;
+    padding-top: 180px;
+    padding-bottom: 201px;
 }
 .order .svg{
 padding: 10px;
@@ -1083,25 +1562,29 @@ width: fit-content;
 margin: auto;
 border-radius: 50%;
 box-shadow: 0 0 5px rgba(0, 0, 0, 0.144);
+margin-bottom: 32px;
 }
 .order h1{
     font-size: var(--size_3);
     color:#101750 ;
     font-family: var(--family_3);
-    padding: 20px 0;
+    margin-bottom: 28px;
 }
 .order p{
     font-size: var(--size_9);
     color:#8D92A7 ;
     font-family: var(--family_2);
+    line-height: 30px;
+    padding: 0 !important;
+    margin-bottom: 40px;
+}
+.order button{
+    margin-bottom: 65px !important;
 }
 
 
-@media (max-width:1000px) {
-    .product .bigCard{
-        padding: 15px 60px;
-      
-    }
+@media (max-width:1100px) {
+   
     
 :root{
    
@@ -1132,8 +1615,7 @@ box-shadow: 0 0 5px rgba(0, 0, 0, 0.144);
     padding: 10px 20px;}
 #page2 .miniCard .left_icons li{
         margin:0 0 0 var(--gap-md) ; }
-.carts .list h5{    
-padding-top: 10px !important; }
+
 
 .details .btn{
     flex-direction: column !important;
@@ -1145,5 +1627,62 @@ padding-top: 10px !important; }
 .des .links_des{
     gap: 15px;
 
+}
+.visaGoogle{
+    gap: 24px;
+}
+
+.product .bigCard {
+ row-gap: 30px;
+ column-gap: 0px;
+   
+}
+.product .card,.productLat .card2{
+    height: 250px;
+}
+
+.product .img_card {
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    
+}
+.productLat .img_card{
+    width: 80%;
+    height: 80%;
+    
+}
+.productLat .bigCard{
+    column-gap: 0px;
+
+}
+.visa{
+    margin-left: 0px;
+   
+}
+.details .cardde{
+    padding: 10px ;
+}
+.carts .tabelCard{
+    padding-inline: 5px;
+}
+.shipping_right{
+    margin-top: 20px !important;
+}
+.contact .contactWay .colorLast{
+    margin-bottom: 57px;
+   
+}
+
+.contact .information .circle {
+margin-bottom: 20px;    
+}
+.navbar{
+   
+    height: fit-content !important;
+    padding-inline: 0px !important;
+}
+.navbar .navSearch{
+    gap: 0px !important;;
 }
 }
